@@ -10,7 +10,7 @@
 
 	#ifdef __cplusplus
 		#define LUABLOB_API(rt) extern "C" LUABLOB_DECLSPEC rt __cdecl
-		#define LUA_MODLOADER_F extern "C" LUATHREADING_DECLSPEC int __cdecl
+		#define LUA_MODLOADER_F extern "C" LUABLOB_DECLSPEC int __cdecl
 	#else
 		#define LUABLOB_API(rt) LUABLOB_DECLSPEC rt __cdecl
 	#endif
