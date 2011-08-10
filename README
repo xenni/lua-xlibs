@@ -1,0 +1,15 @@
+lua-xlibs is a collection of custom-built lua libraries for various purposes.
+They all run on lua 5.2.0-beta, and are released under the 'Microsoft Public License (MS-PL)'.
+(Please contact me if this is a problem for anyone.)
+
+lib-blob handles binary large objects 'blobs', which are just blocks of arbirary binary data.
+lib-blob should compile on all platforms with a compliant standard C compiler.
+
+lib-sockets provides a very basic sockets implementation to lua.
+lib-sockets requires lib-blob, and will compile on Windows.
+lib-sockets might also compile on POSIX (the POSIX-specific code is there), I have never tested it, though.
+
+lib-memcache is a thin lair over lib-sockets which provides a memcache API. It is written entirely in lua.
+
+lib-sqlite is a nearly-complete lua binding for SQLite 3.7.7.1.
+Later versions of SQLite will probably work fine, as will some previous versions.
