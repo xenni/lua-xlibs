@@ -11,5 +11,8 @@ lib-sockets might also compile on POSIX (the POSIX-specific code is there), I ha
 
 lib-memcache is a thin lair over lib-sockets which provides a memcache API. It is written entirely in lua.
 
-lib-sqlite is a nearly-complete lua binding for SQLite 3.7.7.1.
+lib-sqlite is a nearly-complete lua binding for SQLite 3.7.7.1. It requires lib-blob.
 Later versions of SQLite will probably work fine, as will some previous versions.
+
+Binaries are currently provided for Win32 only.
+Additionally, lib-sqlite requires sqlite3.dll on Windows, which you can get by compiling sqlite or via download from "http://sqlite.org/download.html".
