@@ -5,6 +5,9 @@ They all run on lua 5.2.0-beta, and are released under the 'Microsoft Public Lic
 lib-blob handles binary large objects 'blobs', which are just blocks of arbirary binary data.
 lib-blob should compile on all platforms with a compliant standard C compiler.
 
+lib-hash provides fast SHA256 hashing for blobs.
+It could be extended easily to support other variants of SHA-2 or entirely different hash functions.
+
 lib-sockets provides a very basic sockets implementation to lua.
 lib-sockets requires lib-blob, and will compile on Windows.
 lib-sockets might also compile on POSIX (the POSIX-specific code is there), I have never tested it, though.
